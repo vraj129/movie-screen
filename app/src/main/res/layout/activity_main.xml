@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#636161"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/image"
+          android:layout_width="match_parent"
+          android:layout_height="300dp"
+          android:src="@drawable/deadpool_main" />
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/recylcer1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/image"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentEnd="true"
+          android:layout_marginTop="-101dp"
+          android:textColor="@color/black" />
+      <androidx.cardview.widget.CardView
+          android:layout_below="@+id/recylcer1"
+          android:layout_width="match_parent"
+          android:layout_marginTop="8dp"
+          android:layout_margin="10dp"
+          android:layout_height="wrap_content"
+          android:id="@+id/cardview"
+          style="@style/CardView.Light">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/constraint1"
+            android:padding="10dp">
+
+          <TextView
+              android:id="@+id/textView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="DeadPool 2"
+              android:textColor="@color/black"
+              android:textSize="20sp"
+              android:textStyle="bold"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <Button
+              android:id="@+id/button"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:backgroundTint="#f3ce13"
+              android:drawableEnd="@drawable/ic_baseline_star_24"
+              android:text="IMDB"
+              android:textColor="@color/black"
+              android:textSize="15sp"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+          <Button
+              android:id="@+id/button2"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_marginStart="20dp"
+              android:layout_marginTop="28dp"
+              android:backgroundTint="#F37413"
+              android:text="ACTION"
+              android:textSize="15sp"
+              android:textStyle="bold"
+              app:layout_constraintStart_toEndOf="@+id/button"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <Button
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="28dp"
+              android:backgroundTint="#F6C104"
+              android:text="COMEDY"
+              android:textSize="15sp"
+              android:textStyle="bold"
+              app:layout_constraintStart_toEndOf="@+id/button2"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <Button
+              android:id="@+id/button3"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_marginStart="124dp"
+              android:layout_marginTop="16dp"
+              android:backgroundTint="#D8931D"
+              android:text="SCIENCE FICTION"
+              android:textSize="15sp"
+              android:textStyle="bold"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="4dp"
+              android:layout_marginTop="20dp"
+              android:text="Foul-mouthed mutant mercenary Wade Wilson (a.k.a. Deadpool) assembles a team of fellow mutant rogues to protect a young boy with supernatural abilities from the brutal, time-traveling cyborg Cable."
+              android:textColor="@color/black"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+          <Button
+              android:id="@+id/button4"
+              android:layout_width="wrap_content"
+              android:layout_height="40dp"
+              android:layout_marginStart="8dp"
+              android:layout_marginTop="28dp"
+              android:backgroundTint="#019AC8"
+              android:text="POST PRODUCTION"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+          <TextView
+              android:id="@+id/textView3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="44dp"
+              android:text="May 15th, 2018"
+              android:textColor="@color/black"
+              app:layout_constraintStart_toEndOf="@+id/button4"
+              app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+          <TextView
+              android:id="@+id/text1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:layout_marginEnd="16dp"
+              android:text="READ MORE"
+              android:textColor=" 	#0645AD"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/constraint"
+              android:visibility="gone"
+              android:layout_marginTop="12dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/text1">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAST"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CREW"
+                android:id="@+id/textView5"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler2"
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler3"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView5"/>
+          </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+      </androidx.cardview.widget.CardView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="SIMILAR MOVIES"
+          android:textStyle="bold"
+          android:textSize="15sp"
+          android:textColor="@color/white"
+        android:layout_below="@id/cardview"
+        android:id="@+id/text"/>
+      <androidx.recyclerview.widget.RecyclerView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/text"
+          android:layout_margin="3dp"
+          android:id="@+id/recycler4"
+          android:layout_marginTop="8dp"/>
+    </RelativeLayout>
+  </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
